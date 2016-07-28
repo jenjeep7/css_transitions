@@ -1,15 +1,38 @@
 a {
+  
   text-decoration: none;
-  font-size: 1.5em;
-  padding: 10px;
-  }
+  font-size: 1.25em;
 
-  .btn {
+}
+
+.btn {
+  width: 90px;
   background-color: #00A0D6;
   transition: background-color 0.4s, color 0.4s;
   border-radius: 25px;
+  position: absolute;
+  overflow: hidden;
+
 }
 .btn:hover {
   background-color: #007DA7;
-  color: white;
+  color: grey;
+}
+.content {
+  position: relative;
+  transition: top 0.3s;
+  overflow: hidden;
+}
+.top {
+  top: 0;
+
+}
+.btn:hover .top {
+  top: -100px;
+}
+.bottom {
+  top: 100px;
+}
+.btn:hover .bottom {
+  top: 0px;
 }
