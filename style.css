@@ -1,5 +1,5 @@
 a {
-  
+
   text-decoration: none;
   font-size: 1.25em;
 
@@ -35,4 +35,20 @@ a {
 }
 .btn:hover .bottom {
   top: 0px;
+}
+/*Modal window css*/
+.modal, .modal-overlay {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s .5s, visibility 1s .5s;
+}
+.modal.active,
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgb(171, 40, 210);
+  width: 200px;
+}
+.modal.active {
+  padding: 20px;
 }
