@@ -52,3 +52,23 @@ a {
 .modal.active {
   padding: 20px;
 }
+.modal-header .modal-close {
+  font-size: 200%;
+  right: 15px;
+  top: 0px;
+  transition: transform 4s;
+  color: white;
+}
+.modal-close:hover {
+  transform: rotate(1turn);
+}
+.form-input + .form-label {
+  position: relative;
+  padding: 0 1em;
+  color: #6A7989
+  transition: color 0.3s, transform 0.3s:
+}
+.form-input:focus + .form-label {
+  color: #333333;
+  transform: scale(0.8);
+}
