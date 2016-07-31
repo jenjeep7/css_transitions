@@ -62,10 +62,14 @@ a {
 .modal-close:hover {
   transform: rotate(1turn);
 }
+/*The form animations don't work due to not having the correct
+html from code academy.*/
+
 .form-input + .form-label {
   position: relative;
   padding: 0 1em;
-  color: #6A7989
+  color: #6A7989;
+  transform-origin: center left;
   transition: color 0.3s, transform 0.3s:
 }
 .form-input:focus + .form-label {
